@@ -9,6 +9,9 @@ parameters = [
   {name = "dev.catalogue.mongo_url", value = "mongodb://mongodb-dev.kruthikadevops.online:27017/catalogue"},
   {name = "dev.user.mongo", value = "MONGO=true"},
   {name = "dev.user.redis", value = "redis-dev.kruthikadevops.online"},
-  {name = "dev.user.mongo_url", value = "mongodb://mongodb-dev.kruthikadevops.online:27017/users"}
+  {name = "dev.user.mongo_url", value = "mongodb://mongodb-dev.kruthikadevops.online:27017/users"},
+  {name = "dev.cart.redis", value = "redis-dev.kruthikadevops.online"},
+  {name = "dev.cart.catalogue_host", value = "catalogue-dev.kruthikadevops.online"},
+  {name = "dev.cart.catalogue_port", value = "8080"}
 ]
 
