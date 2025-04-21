@@ -6,6 +6,9 @@ parameters = [
   {name = "dev.frontend.payment_url", value = "http://payment-dev.kruthikadevops.online:8080/"},
   {name = "dev.catalogue.mongo_endpoint", value = "mongodb-dev.kruthikadevops.online"},
   {name = "dev.catalogue.mongo", value = "MONGO=true"},
-  {name = "dev.catalogue.mongo_url", value = "mongodb://mongodb-dev.kruthikadevops.online:27017/catalogue"}
+  {name = "dev.catalogue.mongo_url", value = "mongodb://mongodb-dev.kruthikadevops.online:27017/catalogue"},
+  {name = "dev.user.mongo", value = "MONGO=true"},
+  {name = "dev.user.redis", value = "redis-dev.kruthikadevops.online"},
+  {name = "dev.user.mongo_url", value = "mongodb://mongodb-dev.kruthikadevops.online:27017/users"}
 ]
 
