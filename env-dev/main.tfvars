@@ -12,6 +12,12 @@ parameters = [
   {name = "dev.user.mongo_url", value = "mongodb://mongodb-dev.kruthikadevops.online:27017/users"},
   {name = "dev.cart.redis", value = "redis-dev.kruthikadevops.online"},
   {name = "dev.cart.catalogue_host", value = "catalogue-dev.kruthikadevops.online"},
-  {name = "dev.cart.catalogue_port", value = "8080"}
+  {name = "dev.cart.catalogue_port", value = "8080"},
+  {name = "dev.shipping.mysql_url", value = "mysql-dev.kruthikadevops.online"},
+  {name = "dev.shipping.cart_host", value = "cart-dev.kruthikadevops.online:8080"},
+  {name = "dev.shipping.db_host", value = "mysql-dev.kruthikadevops.online"},
+  {name = "dev.shipping.mysql_user", value = "root"},
+  {name = "dev.shipping.mysql_password", value = "RoboShop@1"}
 ]
+
 
