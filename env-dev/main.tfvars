@@ -5,8 +5,7 @@ parameters = [
   {name = "dev.frontend.shipping_url", value = "http://shipping-dev.kruthikadevops.online:8080/"},
   {name = "dev.frontend.payment_url", value = "http://payment-dev.kruthikadevops.online:8080/"},
   {name = "dev.catalogue.mongo_endpoint", value = "mongodb-dev.kruthikadevops.online"},
-  {name = "dev.catalogue.mongo", value = "MONGO=true"},
-  {name = "dev.catalogue.mongo_url", value = "mongodb://mongodb-dev.kruthikadevops.online:27017/catalogue"},
+  {name = "dev.catalogue.mongo", value = "DOCUMENTDB=true"},
   {name = "dev.user.mongo", value = "MONGO=true"},
   {name = "dev.user.redis", value = "redis-dev.kruthikadevops.online"},
   {name = "dev.user.mongo_url", value = "mongodb://mongodb-dev.kruthikadevops.online:27017/users"},
@@ -22,7 +21,8 @@ parameters = [
   {name = "dev.payment.user_host", value = "user-dev.kruthikadevops.online" },
   {name = "dev.payment.user_port", value = "8080" },
   {name = "dev.payment.rabbitmq_host", value = "rabbitmq-dev.kruthikadevops.online" },
-  {name = "dev.payment.rabbitmq_user", value = "roboshop" }
+  {name = "dev.payment.rabbitmq_user", value = "roboshop" },
+  {name = "dev.docdb.db_endpoint", value = "docdb-dev-cluster:cluster-cyfewq2ey3qv:us-east-1:docdb:amazonaws:com" }
 ]
 
 passwords = [
@@ -32,7 +32,10 @@ passwords = [
   {name = "dev.docdb.db_pass", value = "roboshop" },
   {name = "dev.rds.db_user", value = "roboshop" },
   {name = "dev.rds.db_pass", value = "roboshop" },
-  {name = "dev.rabbitmq.rabbitmq_appuser_password", value = "roboshop123" }
+  {name = "dev.rabbitmq.rabbitmq_appuser_password", value = "roboshop123" },
+  {name = "dev.catalogue.mongo_url", value = "mongodb://roboshop:roboshop@docdb-dev-cluster.cluster-cyfewq2ey3qv.us-east-1.docdb.amazonaws.com:27017/catalogue?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false"}
+
+
 
 ]
 
