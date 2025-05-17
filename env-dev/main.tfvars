@@ -22,7 +22,7 @@ parameters = [
   {name = "dev.payment.user_port", value = "8080" },
   {name = "dev.payment.rabbitmq_host", value = "rabbitmq-dev.kruthikadevops.online" },
   {name = "dev.payment.rabbitmq_user", value = "roboshop" },
-  {name = "dev.docdb.db_endpoint", value = "docdb-dev-cluster:cluster-cyfewq2ey3qv:us-east-1:docdb:amazonaws:com" }
+  {name = "dev.docdb.db_endpoint", value = "docdb-dev-cluster.cluster-cyfewq2ey3qv.us-east-1.docdb.amazonaws.com" }
 ]
 
 passwords = [
